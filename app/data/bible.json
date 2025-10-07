@@ -1,0 +1,30 @@
+{
+  "books": [
+    {
+      "name": "Gênesis",
+      "chapters": [
+        {
+          "number": 1,
+          "verses": [
+            "No princípio, criou Deus os céus e a terra.",
+            "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava por sobre as águas.",
+            "Disse Deus: Haja luz; e houve luz."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Salmos",
+      "chapters": [
+        {
+          "number": 23,
+          "verses": [
+            "O Senhor é o meu pastor; nada me faltará.",
+            "Deitar-me faz em verdes pastos, guia-me mansamente a águas tranquilas.",
+            "Refrigera a minha alma; guia-me pelas veredas da justiça por amor do seu nome."
+          ]
+        }
+      ]
+    }
+  ]
+}
