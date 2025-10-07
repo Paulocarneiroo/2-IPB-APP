@@ -1,21 +1,23 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
+import MenuButton from "~/app/components/MenuButton";
 
 export default function HomeScreen() {
     const router = useRouter();
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Central IPB</Text>
+            <Text style={styles.title}>2° IPB</Text>
 
-            
+            <MenuButton label="📖 Bíblia Sagrada" route="/books" />
 
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => router.push("/bible")}
-            >
-                <Text style={styles.buttonText}>📖 Acessar Bíblia</Text>
-            </TouchableOpacity>
+            <MenuButton label="🎹 Hinário Novo Canto" route="/books" />
+
+            <MenuButton label="📜Confissão de Fé de Westminster" route="/books" />
+
+            <MenuButton label="📚Catecismo Maior" route="/books" />
+
+            <MenuButton label="➕ Mais" route="/books" />
         </View>
     );
 }
@@ -32,16 +34,5 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         color: "#1E293B",
         marginBottom: 30,
-    },
-    button: {
-        backgroundColor: "#1E293B",
-        paddingVertical: 12,
-        paddingHorizontal: 20,
-        borderRadius: 10,
-    },
-    buttonText: {
-        color: "#fff",
-        fontSize: 18,
-        fontWeight: "600",
-    },
+    }
 });

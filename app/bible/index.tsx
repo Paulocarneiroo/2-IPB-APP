@@ -1,3 +1,4 @@
+import { useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";
 import { View, Text, ScrollView, ActivityIndicator, StyleSheet } from "react-native";
 
@@ -9,13 +10,16 @@ interface Verse {
 }
 
 export default function BibleScreen() {
+    const { book } = useLocalSearchParams<{ book: string }>();
     const [verses, setVerses] = useState<Verse[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        if (!book) return;
+
         async function fetchBibleChapter() {
             try {
-                const response = await fetch("https://bible-api.com/Jo%C3%A3o+3?translation=almeida");
+                const response = await fetch(`https://bible-api.com/${book}%201?translation=almeida`);
                 const data = await response.json();
                 setVerses(data.verses);
             } catch (error) {
@@ -26,13 +30,13 @@ export default function BibleScreen() {
         }
 
         fetchBibleChapter();
-    }, []);
+    }, [book]);
 
     if (loading) {
         return (
             <View style={styles.loadingContainer}>
                 <ActivityIndicator size="large" color="#1E293B" />
-                <Text style={{ marginTop: 10 }}>Carregando capítulo...</Text>
+                <Text style={{ marginTop: 10 }}>Carregando {book} 1...</Text>
             </View>
         );
     }
