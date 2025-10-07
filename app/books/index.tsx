@@ -21,7 +21,7 @@ export default function BookSelection() {
     const router = useRouter();
 
     const handleSelectBook = (book: string) => {
-        router.push(`/bible?book=${encodeURIComponent(book)}`);
+        router.push(`/chapter?book=${encodeURIComponent(book)}`);
     };
 
     return (

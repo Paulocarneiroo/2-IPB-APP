@@ -10,44 +10,63 @@ interface Verse {
 }
 
 export default function BibleScreen() {
-    const { book } = useLocalSearchParams<{ book: string }>();
+    const { book, chapter } = useLocalSearchParams<{ book: string; chapter: string }>();
     const [verses, setVerses] = useState<Verse[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        if (!book) return;
+        if (!book || !chapter) return;
 
         async function fetchBibleChapter() {
             try {
-                const response = await fetch(`https://bible-api.com/${book}%201?translation=almeida`);
+                setLoading(true);
+                // Substitui espaços no nome do livro por %20
+                const formattedBook = encodeURIComponent(book);
+                const response = await fetch(
+                    `https://bible-api.com/${formattedBook}%20${chapter}?translation=almeida`
+                );
                 const data = await response.json();
-                setVerses(data.verses);
+
+                if (data.verses) {
+                    setVerses(data.verses);
+                } else {
+                    setVerses([]);
+                }
             } catch (error) {
                 console.error("Erro ao buscar capítulo:", error);
+                setVerses([]);
             } finally {
                 setLoading(false);
             }
         }
 
         fetchBibleChapter();
-    }, [book]);
+    }, [book, chapter]);
 
     if (loading) {
         return (
             <View style={styles.loadingContainer}>
                 <ActivityIndicator size="large" color="#1E293B" />
-                <Text style={{ marginTop: 10 }}>Carregando {book} 1...</Text>
+                <Text style={{ marginTop: 10 }}>
+                    Carregando {book} {chapter}...
+                </Text>
+            </View>
+        );
+    }
+
+    if (verses.length === 0) {
+        return (
+            <View style={styles.loadingContainer}>
+                <Text>Não foi possível carregar {book} {chapter}.</Text>
             </View>
         );
     }
 
     return (
         <ScrollView style={styles.container}>
-            {verses.length > 0 && (
-                <Text style={styles.chapterTitle}>
-                    {verses[0].book_name} {verses[0].chapter}
-                </Text>
-            )}
+            <Text style={styles.chapterTitle}>
+                {verses[0].book_name} {verses[0].chapter}
+            </Text>
             {verses.map((v) => (
                 <Text key={v.verse} style={styles.verse}>
                     <Text style={styles.verseNumber}>{v.verse} </Text>
