@@ -17,7 +17,7 @@ export default function HomeScreen() {
 
             <MenuButton label="📚Catecismo Maior" route="/books" />
 
-            <MenuButton label="➕ Mais" route="/books" />
+            <MenuButton label="➕ Mais" route="/more" />
         </View>
     );
 }
