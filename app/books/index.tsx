@@ -25,7 +25,11 @@ export default function BookSelection() {
     };
 
     return (
-        <ScrollView style={styles.container}>
+        <ScrollView
+            style={styles.container}
+            contentContainerStyle={styles.scrollContent}
+            showsVerticalScrollIndicator={false}
+        >
             <Text style={styles.header}>Antigo Testamento</Text>
             <View style={styles.grid}>
                 {oldTestament.map((book) => (
@@ -59,7 +63,10 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#F8FAFC",
-        padding: 16,
+        paddingHorizontal: 16,
+    },
+    scrollContent: {
+        paddingBottom: 100,
     },
     header: {
         fontSize: 20,

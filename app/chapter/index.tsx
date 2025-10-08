@@ -40,7 +40,10 @@ export default function ChapterSelection() {
     };
 
     return (
-        <ScrollView style={styles.container}>
+        <ScrollView
+            style={styles.container}
+            contentContainerStyle={styles.scrollContent}
+        >
             <Text style={styles.header}>{book}</Text>
             <View style={styles.grid}>
                 {chapters.map((chapter) => (
@@ -62,6 +65,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#F8FAFC",
         padding: 16,
+    },
+    scrollContent: {
+        paddingBottom: 100,
     },
     header: {
         fontSize: 22,
