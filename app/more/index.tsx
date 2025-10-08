@@ -6,7 +6,7 @@ export default function MoreScreen() {
     return (
         <View style={styles.container}>
 
-            <MenuButton label="📖 Sobre mim" route="/me" />
+            <MenuButton label="👤 Sobre mim" route="/me" />
 
         </View>
     )

@@ -15,7 +15,7 @@ export default function Layout() {
             >
                 <Stack
                     screenOptions={{
-                        title: "2°IPB",
+                        title: "IPB",
                         headerStyle: { backgroundColor: "#055c43" },
                         headerTintColor: "#fff",
                         headerTitleAlign: "left",

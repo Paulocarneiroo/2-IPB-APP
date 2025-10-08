@@ -13,8 +13,8 @@ export default function PresentationScreen() {
                 <Text style={styles.subtitle}>Engenheiro de Software</Text>
 
                 <Text style={styles.text}>
-                    Sou servo do Senhor Jesus Cristo.
-                    Como reformado e presbiteriano, acredito que toda habilidade
+                    Sou servo do Senhor Jesus Cristo, reformado e presbiteriano.
+                    Acredito que toda habilidade
                     que temos deve ser usada para a glória de Deus.
                     Este aplicativo nasceu do desejo de servir à 2° Igreja Presbiteriana
                     de Patos-PB, tornando seus documentos e materiais mais acessíveis a
