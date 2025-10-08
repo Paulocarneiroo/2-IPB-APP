@@ -33,7 +33,7 @@ export default function Layout() {
                                     style={{
                                         width: 55,
                                         height: 55,
-                                        borderRadius: 15,
+                                        borderRadius: 50,
                                         marginTop: 8,
                                     }}
                                     resizeMode="contain"

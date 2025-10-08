@@ -20,10 +20,9 @@ export default function BibleScreen() {
         async function fetchBibleChapter() {
             try {
                 setLoading(true);
-                // Substitui espaços no nome do livro por %20
                 const formattedBook = encodeURIComponent(book);
                 const response = await fetch(
-                    `https://bible-api.com/${formattedBook}%20${chapter}?translation=almeida`
+                    `https://bible-api.com/${formattedBook}%20${chapter}?translation=almeida&single_chapter_book_matching=indifferent`
                 );
                 const data = await response.json();
 
