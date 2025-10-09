@@ -1,47 +1,49 @@
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, StyleSheet, View } from "react-native";
 import { useRouter } from "expo-router";
 
 interface MenuButtonProps {
     label: string;
     route: string;
+    icon?: React.ReactNode;
 }
 
-export default function MenuButton({ label, route }: MenuButtonProps) {
+export default function MenuButton({ label, route, icon }: MenuButtonProps) {
     const router = useRouter();
 
     return (
-        <TouchableOpacity
-            style={styles.button}
-            onPress={() => router.push(route)}
-        >
-            <Text style={styles.buttonText}>{label}</Text>
+        <TouchableOpacity style={styles.button} onPress={() => router.push(route)}>
+            <View style={styles.content}>
+                {icon && <View style={styles.iconContainer}>{icon}</View>}
+                <Text style={styles.text}>{label}</Text>
+            </View>
         </TouchableOpacity>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#F8FAFC",
-    },
-    title: {
-        fontSize: 28,
-        fontWeight: "bold",
-        color: "#1E293B",
-        marginBottom: 30,
-    },
     button: {
-        backgroundColor: "#055c43",
-        paddingVertical: 12,
+        width: "100%",
+        backgroundColor: "#eae4dc",
+        paddingVertical: 14,
         paddingHorizontal: 20,
-        borderRadius: 10,
-        marginBottom: 10
+        borderRadius: 12,
+        flexDirection: "row",
+        alignItems: "center",
+        shadowColor: "#000",
+        shadowOpacity: 0.1,
+        shadowRadius: 3,
+        elevation: 2,
     },
-    buttonText: {
-        color: "#fff",
-        fontSize: 18,
-        fontWeight: "600",
+    content: {
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    iconContainer: {
+        marginRight: 12,
+    },
+    text: {
+        fontSize: 16,
+        fontWeight: "500",
+        color: "#4b3f2f",
     },
 });

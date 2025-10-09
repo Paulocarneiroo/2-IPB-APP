@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { useRouter } from "expo-router";
+import { Ionicons, MaterialCommunityIcons, FontAwesome5 } from "@expo/vector-icons";
 import MenuButton from "~/app/components/MenuButton";
 
 export default function HomeScreen() {
@@ -7,17 +8,45 @@ export default function HomeScreen() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>IPB</Text>
+            <Text style={styles.title}>Biblioteca Reformada</Text>
+            <Text style={styles.subtitle}>Central de documentos e materiais da IPB</Text>
 
-            <MenuButton label="📖 Bíblia Sagrada" route="/books" />
+            <ScrollView
+                contentContainerStyle={styles.menuContainer}
+                showsVerticalScrollIndicator={false}
+            >
+                <MenuButton
+                    label="Bíblia Sagrada"
+                    icon={<Ionicons name="book-outline" size={24} color="#4b3f2f" />}
+                    route="/books"
+                />
 
-            <MenuButton label="🎹 Hinário Novo Cântico" route="/books" />
+                <MenuButton
+                    label="Hinário Novo Cântico"
+                    icon={<MaterialCommunityIcons name="music-note-outline" size={24} color="#4b3f2f" />}
+                    route="/newSong"
+                />
 
-            <MenuButton label="📜Confissão de Fé de Westminster" route="/cfw" />
+                <MenuButton
+                    label="Confissão de Fé de Westminster"
+                    icon={<FontAwesome5 name="scroll" size={22} color="#4b3f2f" />}
+                    route="/cfw"
+                />
 
-            <MenuButton label="📚Catecismo Maior" route="/books" />
+                <MenuButton
+                    label="Catecismo Maior"
+                    icon={<Ionicons name="library-outline" size={24} color="#4b3f2f" />}
+                    route="/catecismoMaior"
+                />
 
-            <MenuButton label="➕ Mais" route="/more" />
+                <MenuButton
+                    label="Mais"
+                    icon={<MaterialCommunityIcons name="plus-circle-outline" size={26} color="#4b3f2f" />}
+                    route="/more"
+                />
+            </ScrollView>
+
+            <Text style={styles.footer}>Igreja Presbiteriana do Brasil</Text>
         </View>
     );
 }
@@ -25,14 +54,36 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: "center",
+        backgroundColor: "#f8f5f0",
         alignItems: "center",
-        backgroundColor: "#cad9d4",
+        justifyContent: "flex-start",
+        paddingTop: 70,
     },
     title: {
         fontSize: 28,
-        fontWeight: "bold",
-        color: "#1E293B",
-        marginBottom: 30,
-    }
+        fontWeight: "700",
+        color: "#4b3f2f",
+        marginBottom: 4,
+        fontFamily: "serif",
+        textAlign: "center",
+    },
+    subtitle: {
+        fontSize: 14,
+        color: "#6b5b4b",
+        marginBottom: 25,
+        textAlign: "center",
+    },
+    menuContainer: {
+        width: "90%",
+        alignItems: "center",
+        gap: 12,
+        paddingBottom: 50,
+    },
+    footer: {
+        position: "absolute",
+        bottom: 20,
+        fontSize: 12,
+        color: "#7c6e5a",
+        fontStyle: "italic",
+    },
 });

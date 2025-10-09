@@ -9,7 +9,6 @@ export default function ChapterSelection() {
 
     useEffect(() => {
         const chaptersCount: Record<string, number> = {
-            // 📘 Antigo Testamento
             "Gênesis": 50, "Êxodo": 40, "Levítico": 27, "Números": 36,
             "Deuteronômio": 34, "Josué": 24, "Juízes": 21, "Rute": 4,
             "1 Samuel": 31, "2 Samuel": 24, "1 Reis": 22, "2 Reis": 25,
@@ -20,7 +19,6 @@ export default function ChapterSelection() {
             "Obadias": 1, "Jonas": 4, "Miquéias": 7, "Naum": 3, "Habacuque": 3, "Sofonias": 3,
             "Ageu": 2, "Zacarias": 14, "Malaquias": 4,
 
-            // 📗 Novo Testamento
             "Mateus": 28, "Marcos": 16, "Lucas": 24, "João": 21,
             "Atos": 28, "Romanos": 16, "1 Coríntios": 16, "2 Coríntios": 13,
             "Gálatas": 6, "Efésios": 6, "Filipenses": 4, "Colossenses": 4,

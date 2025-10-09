@@ -62,7 +62,9 @@ export default function BibleScreen() {
     }
 
     return (
-        <ScrollView style={styles.container}>
+        <ScrollView
+            style={styles.container}
+        >
             <Text style={styles.chapterTitle}>
                 {verses[0].book_name} {verses[0].chapter}
             </Text>
