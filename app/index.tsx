@@ -36,7 +36,7 @@ export default function HomeScreen() {
                 <MenuButton
                     label="Catecismo Maior"
                     icon={<Ionicons name="library-outline" size={24} color="#4b3f2f" />}
-                    route="/catecismoMaior"
+                    route="/catechism"
                 />
 
                 <MenuButton
