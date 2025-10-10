@@ -10,7 +10,10 @@ export default function WestminsterScreen() {
     };
 
     return (
-        <ScrollView style={styles.container}>
+        <ScrollView
+            style={styles.container}
+            contentContainerStyle={styles.scrollContent}
+        >
             {confissao.map((item) => (
                 <View key={item.id} style={styles.card}>
                     <TouchableOpacity onPress={() => toggleExpand(item.id)}>
@@ -30,6 +33,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#f2f2f2",
         padding: 10,
+    },
+    scrollContent: {
+        paddingBottom: 100,
     },
     card: {
         backgroundColor: "#fff",

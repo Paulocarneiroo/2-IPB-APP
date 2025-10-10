@@ -64,6 +64,7 @@ export default function BibleScreen() {
     return (
         <ScrollView
             style={styles.container}
+            contentContainerStyle={styles.scrollContent}
         >
             <Text style={styles.chapterTitle}>
                 {verses[0].book_name} {verses[0].chapter}
@@ -83,6 +84,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#F8FAFC",
         padding: 16,
+    },
+    scrollContent: {
+        paddingBottom: 100,
     },
     loadingContainer: {
         flex: 1,

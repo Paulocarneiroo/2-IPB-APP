@@ -7,7 +7,10 @@ export default function HymnalScreen() {
     const [expandedId, setExpandedId] = useState<number | null>(null);
 
     return (
-        <ScrollView style={styles.container}>
+        <ScrollView
+            style={styles.container}
+            contentContainerStyle={styles.scrollContent}
+        >
             <Text style={styles.title}>Hinário Novo Cântico</Text>
 
             {hymns.map((hymn) => (
@@ -43,6 +46,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#f8f5f0",
         padding: 20,
+    },
+    scrollContent: {
+        paddingBottom: 100,
     },
     title: {
         fontSize: 22,
