@@ -62,17 +62,15 @@ export default function BibleScreen() {
     }
 
     return (
-        <ScrollView
-            style={styles.container}
-            contentContainerStyle={styles.scrollContent}
-        >
+        <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
             <Text style={styles.chapterTitle}>
                 {verses[0].book_name} {verses[0].chapter}
             </Text>
+
             {verses.map((v) => (
-                <Text key={v.verse} style={styles.verse}>
+                <Text key={v.verse} style={styles.verse} selectable>
                     <Text style={styles.verseNumber}>{v.verse} </Text>
-                    {v.text}
+                    {v.text.trim()}
                 </Text>
             ))}
         </ScrollView>
@@ -106,6 +104,7 @@ const styles = StyleSheet.create({
         lineHeight: 26,
         color: "#0f172a",
         marginBottom: 8,
+        fontWeight: "bold"
     },
     verseNumber: {
         fontWeight: "bold",
