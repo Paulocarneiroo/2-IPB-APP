@@ -1,5 +1,17 @@
 [
   {
+    "id": 9,
+    "titulo": "Aleluia ao Deus Trino",
+    "numero": 9,
+    "letra": "A ti, ó Deus, altíssimo Senhor,\nEterno Pai, supremo Benfeitor,\nTeus filhos vêm, alegres, dar louvor.\nAleluia! Aleluia!\n\nA ti, Deus Filho, Salvador Jesus,\nDa graça a fonte, da verdade a luz;\nPor teu amor mostrado sobre a cruz,\nAleluia! Aleluia!\n\nA ti, ó Deus, Espírito de amor,\nDe nossas almas santificador.\nMestre divino, bom Consolador,\nAleluia! Aleluia!\n\nÓ tu, Deus Trino, vem nos conceder\nA plenitude do real poder\nE as nossas almas vem, aqui, reger.\nAleluia! Aleluia! Amém."
+  },
+  {
+    "id": 10,
+    "titulo": "A Criação e Seu Criador",
+    "numero": 10,
+    "letra": "Vós, criaturas de Deus Pai,\nTodos erguei a voz, cantai!\nOh! Louvai-o! Aleluia!\nTu, sol dourado a refulgir,\nTu, lua em prata a reluzir,\nOh! Louvai-o! Oh! Louvai-o!\nAleluia! Aleluia! Aleluia!\n\nOh! Boa terra que nos dás\nInfindas bênçãos, canta já!\nOh! Louvai-o! Aleluia!\nFrutos e flores, juntos dai\nA glória a Deus, Senhor e Pai.\nOh! Louvai-o! Oh! Louvai-o!\nAleluia! Aleluia! Aleluia!\n\nVós, homens sábios e de bem,\nA todos proclamai também!\nOh! Louvai-o! Aleluia!\nLouvor ao Filho, glória ao Pai,\nE ao Santo Espírito louvai!\nOh! Louvai-o! Oh! Louvai-o!\nAleluia! Aleluia! Aleluia!"
+  },
+  {
     "id": 11,
     "titulo": "Trindade Santíssima",
     "numero": 11,
@@ -16,6 +28,12 @@
     "titulo": "Grandioso És Tu",
     "numero": 26,
     "letra": "Senhor meu Deus, quando eu, maravilhado,\nOs grandes feitos vejo da tua mão,\nEstrelas, mundos e trovões rolando,\nA proclamar teu nome na amplidão,\n\nCanta minh’alma, então, a ti Senhor:\nGrandioso és tu, grandioso és tu! (bis)\n\nQuando atravesso bosques e florestas\nOuvindo, à brisa, pássaros cantar,\nOu vejo, além, montanhas altaneiras\nO teu poder e glória proclamar;\n\nQuando percebo que, na cruz maldita,\nPor teu amor, Jesus morreu por mim\nE me livrou do jugo do pecado,\nAli vertendo sangue carmesim;\n\nQuando, afinal, em resplendor e glória,\nJesus abrir as portas da mansão,\nEu hei de estar de joelhos entre os santos,\nNa mais humilde e vera adoração,"
+  },
+  {
+    "id": 42,
+    "titulo": "O Grande Amor de Deus",
+    "numero": 42,
+    "letra": "A Deus demos glória por seu grande amor:\nO Filho bendito por nós todos deu\nE graça concede ao mais vil pecador,\nAbrindo-lhe a porta de entrada no céu.\n\nExultai! Exultai! Vinde todos louvar\nA Jesus, Salvador, a Jesus, Redentor!\nA Deus demos glória, porquanto do céu\nSeu Filho bendito por nós todos deu!\n\nOh! Graça real! Foi assim que Jesus,\nMorrendo, seu sangue por nós derramou.\nHerança nos céus, com os santos em luz,\nLegou-nos aquele que o preço pagou.\n\nTal prova de amor nos persuade a confiar\nNos merecimentos do Filho de Deus!\nE quem, a Jesus, pela fé se entregar,\nVai vê-lo na glória eterna dos céus."
   },
   {
     "id": 47,
@@ -36,10 +54,28 @@
     "letra": "Somente ponho a minha fé na graça excelsa de Jesus,\nNo sacrifício remidor, no sangue do bom Redentor.\n\n         A minha fé e o meu amor\n         Estão firmados no Senhor, (bis)\n\nSe não lhe posso a face ver é pela fé que vou viver;\nEm cada transe a suportar eu hei de nele confiar.\n\nA sua graça é mui real, abrigo traz no temporal;\nAo vir cercar-me a tentação, me fortalece a sua mão.\n\nQuando a trombeta ressoar, irei com ele me encontrar;\nE com os salvos cantarei louvor eterno ao grande Rei!"
   },
   {
+    "id": 107,
+    "titulo": "Perto da Cruz",
+    "numero": 107,
+    "letra": "Quero estar ao pé da cruz, que tão rica fonte\nCorre franca, salutar, de Sião no monte.\n\nSim, na cruz, sim, na cruz sempre me glorio\nE, por fim, descansarei salvo, além do rio.\n\nA tremer, ao pé da cruz, graça, amor achou-me;\nMatutina estrela, ali, raios seus mandou-me.\n\nDesta cruz desejo aqui sempre recordar-me;\nDela à sombra, Salvador, queiras abrigar-me!\n\nJunto à cruz, ardendo em fé, sem temor vigio;\nFirme, até a Pátria ver, santa, além do rio."
+  },
+  {
+    "id": 108,
+    "titulo": "Aflição e Paz",
+    "numero": 108,
+    "letra": "Se paz a mais doce me deres gozar,\nSe dor a mais forte sofrer;\nOh! Seja o que for, tu me fazes saber\nQue feliz com Jesus sempre sou!\n\nSou feliz com Jesus,\nSou feliz com Jesus,\nmeu Senhor!\n\nEmbora me assalte o cruel Satanás\nE ataque com vis tentações;\nOh! Certo eu estou, apesar de aflições,\nQue feliz eu serei com Jesus!\n\nMeu triste pecado, por meu Salvador\nFoi pago de um modo cabal!\nValeu-me o Senhor! Oh! Mercê sem igual!\nSou feliz, graças dou a Jesus!\n\nA vinda eu anseio do meu Salvador!\nEm breve virá me levar\nAo céu, onde eu vou para sempre morar\nCom remidos na luz do Senhor!"
+  },
+  {
     "id": 114,
     "titulo": "Brilho Celeste",
     "numero": 114,
     "letra": "Peregrinando por sobre os montes\nE pelos vales, sempre na luz,\nCristo promete nunca deixar-me,\n“Eis-me convosco” — disse Jesus.\n\nBrilho celeste! Brilho celeste!\nEnche a minha alma, glória do Céu!\nAleluia! Sigo cantando,\nDando louvores, pois Cristo é meu!\n\nSe vejo sombras por toda parte,\nO Salvador não hão de ocultar,\nPois Cristo é luz que nunca se apaga,\nBem ao seu lado sempre hei de andar.\n\nA luz bendita me vai guiando\nEm meu caminho para a Mansão;\nMais e mais perto seguindo o Mestre,\nPossuo o gozo da salvação."
+  },
+  {
+    "id": 116,
+    "titulo": "União com Deus",
+    "numero": 116,
+    "letra": "Mais perto quero estar, meu Deus, de ti,\n‘Inda que seja a dor que me una a ti!\nSempre hei de suplicar: “Mais perto quero estar,\nMais perto quero estar, meu Deus, de ti!”\n\nMesmo vagando aqui, na solidão,\nDe noite, a descansar, dormindo ao chão,\nEm sonhos vou clamar: “Mais perto quero estar,\nMais perto quero estar, meu Deus, de ti!”\n\nMinha alma cantará a ti, Senhor!\nBetel aqui verei por teu favor.\nEu sempre hei de rogar: “Mais perto quero estar,\nMais perto quero estar, meu Deus, de ti!”\n\nE quando a morte, enfim, me vier chamar,\nNos céus, com o Senhor, irei morar!\nEntão me alegrarei perto de ti, meu Rei!\nPerto de ti, meu Rei, meu Deus, de ti!\nAmém."
   },
   {
     "id": 144,
@@ -48,10 +84,22 @@
     "letra": "Que segurança tenho em Jesus,\nPois nele gozo paz, vida e luz!\nCom Cristo herdeiro, Deus me aceitou\nMediante o Filho que me salvou!\n\nConto esta história, cantando assim:\nCristo, na cruz, foi morto por mim!\nConto esta história cantando assim:\nCristo, na cruz, foi morto por mim!\n\nInteiramente me submeti,\nPlena alegria nele senti.\nAnjos, descendo, trazem dos céus\nProvas da graça que vem de Deus.\n\nFirmado em Cristo, no seu amor,\nEstou contente em meu Salvador!\nEsperançoso hei de viver\nPor Jesus Cristo, por seu poder."
   },
   {
+    "id": 147,
+    "titulo": "Vencendo Vem Jesus",
+    "numero": 147,
+    "letra": "Quando à alma sequiosa\nChega a voz do Salvador,\nEis que logo reconhece\nser Jesus, o seu Senhor!\nMas se o “eu” quer levantar-se\nE mostrar algum valor,\nVencendo vem Jesus!\n\nGlória, glória, aleluia! (3 vezes)\nVencendo vem Jesus!\n\nNeste mundo havemos, crentes,\nDe ter sempre algum pesar!\nMesmo lutas, dissabores,\nNossa paz vêm perturbar.\nMas se o mal nos ameaça\nDe a alegria nos roubar,\nVencendo vem Jesus!\n\nDa vaidade, fiéis servos\nLutam por fazer-nos seus!\nMuitas vezes nos assaltam\nOs modernos fariseus.\nMas se alguém procura ver-nos\nSem a graça do bom Deus,\nVencendo vem Jesus!"
+  },
+  {
     "id": 155,
     "titulo": "Castelo Forte",
     "numero": 155,
-    "letra": "Castelo forte é o nosso Deus\nEscudo e boa espada\nCom Seu poder defende os Seus\nA Sua Igreja amada\n\nCom força e com furor, nos prova o tentador\nCom artimanhas tais e astúcias infernais\nIguais não há na Terra\n\nA nossa força nada faz\nEstamos nós perdidos\nMas nosso Deus socorro traz\nE somos protegidos\n\nDefende-nos, Jesus\nO que venceu na cruz\nSenhor dos altos céus\nQue, sendo o próprio Deus\nTriunfa na batalha\n\nSim que a palavra ficará\nSabemos com certeza\nPois ela nos ajudará\nCom armas de defesa\n\nSe temos de perder família, bens, poder\nE, embora a vida vá, por nós Jesus está\nE nos dará seu reino\n\nCastelo forte é o nosso Deus (castelo forte é o nosso Deus)\nCastelo forte é o nosso Deus (castelo forte é o nosso Deus)\nCastelo forte é o nosso Deus (castelo forte é o nosso Deus)\nCastelo forte é o nosso Deus"
+    "letra": "Castelo forte é nosso Deus, espada e bom escudo!\nCom seu poder defende os seus em todo transe agudo.\nCom fúria pertinaz persegue Satanás\nCom ânimo cruel, mas forte é o Deus fiel,\nIgual não há na terra.\n\nA força do homem nada faz, sozinho está perdido!\nMas nosso Deus socorro traz em seu Filho escolhido.\nSabeis quem é? Jesus, o que venceu na cruz,\nSenhor dos altos céus, e sendo o próprio Deus,\nTriunfa na batalha.\n\nSe nos quisessem devorar demônios não contados,\nNão nos iriam derrotar nem ver-nos assustados.\nO príncipe do mal, com seu plano infernal,\nJá condenado está: vencido cairá\nPor uma só palavra.\n\nDe Deus o verbo ficará, sabemos com certeza,\nE nada nos assustará com Cristo por defesa!\nSe temos de perder família, bens, prazer,\nSe tudo se acabar e a morte enfim chegar,\nCom ele reinaremos!"
+  },
+  {
+    "id": 252,
+    "titulo": "Pão Celestial",
+    "numero": 252,
+    "letra": "Pão da vida, pão dos céus, pão celeste é meu Jesus!\nPão que dá ao coração alegria, paz e luz;\nPão que dá ao coração alegria, paz e luz.\n\nSangue que Jesus verteu é divino e eficaz!\nEste sangue, ao coração, força, amor e vida traz;\nEste sangue, ao coração, força, amor e vida traz.\n\nVem, Jesus, me abençoar! Enche-me de ti, Senhor!\nPois almejo te servir e te honrar, meu Salvador.\nPois almejo te servir e te honrar, meu Salvador. Amém."
   },
   {
     "id": 269,
