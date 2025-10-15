@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#F8FAFC",
+        fontWeight: "bold",
     },
     chapterTitle: {
         fontSize: 22,
