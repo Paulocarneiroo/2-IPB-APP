@@ -1,10 +1,20 @@
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, Linking } from "react-native";
 import { useRouter } from "expo-router";
 import { Ionicons, MaterialCommunityIcons, FontAwesome5 } from "@expo/vector-icons";
 import MenuButton from "~/app/components/MenuButton";
 
 export default function HomeScreen() {
     const router = useRouter();
+
+    const openManual = async () => {
+        const url = "https://www.executivaipb.com.br/arquivos/manual_presbiteriano_2024.pdf";
+        const supported = await Linking.canOpenURL(url);
+        if (supported) {
+            await Linking.openURL(url);
+        } else {
+            alert("Não foi possível abrir o link: " + url);
+        }
+    };
 
     return (
         <View style={styles.container}>
@@ -28,6 +38,12 @@ export default function HomeScreen() {
                 />
 
                 <MenuButton
+                    label="Credo Apostólico"
+                    icon={<MaterialCommunityIcons name="cross" size={24} color="#4b3f2f" />}
+                    route="/creed"
+                />
+
+                <MenuButton
                     label="Confissão de Fé de Westminster"
                     icon={<FontAwesome5 name="scroll" size={22} color="#4b3f2f" />}
                     route="/cfw"
@@ -39,14 +55,22 @@ export default function HomeScreen() {
                     route="/catechism"
                 />
 
+                {/* Botão do Manual Presbiteriano */}
+                <MenuButton
+                    label="Manual Presbiteriano"
+                    icon={<MaterialCommunityIcons name="book-open-page-variant" size={24} color="#4b3f2f" />}
+                    onPress={openManual}
+                />
+
                 <MenuButton
                     label="Mais"
                     icon={<MaterialCommunityIcons name="plus-circle-outline" size={26} color="#4b3f2f" />}
                     route="/more"
                 />
+
+                <Text style={styles.footer}>Igreja Presbiteriana do Brasil</Text>
             </ScrollView>
 
-            <Text style={styles.footer}>Igreja Presbiteriana do Brasil</Text>
         </View>
     );
 }

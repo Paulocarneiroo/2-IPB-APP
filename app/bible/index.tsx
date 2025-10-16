@@ -105,7 +105,8 @@ const styles = StyleSheet.create({
         lineHeight: 26,
         color: "#0f172a",
         marginBottom: 8,
-        fontWeight: "bold"
+        fontWeight: "500",
+        paddingBottom: 6
     },
     verseNumber: {
         fontWeight: "bold",

@@ -3,15 +3,24 @@ import { useRouter } from "expo-router";
 
 interface MenuButtonProps {
     label: string;
-    route: string;
+    route?: string;          // Agora opcional
+    onPress?: () => void;    // Nova prop opcional
     icon?: React.ReactNode;
 }
 
-export default function MenuButton({ label, route, icon }: MenuButtonProps) {
+export default function MenuButton({ label, route, onPress, icon }: MenuButtonProps) {
     const router = useRouter();
 
+    const handlePress = () => {
+        if (onPress) {
+            onPress(); // Executa função personalizada
+        } else if (route) {
+            router.push(route); // Navega para a rota
+        }
+    };
+
     return (
-        <TouchableOpacity style={styles.button} onPress={() => router.push(route)}>
+        <TouchableOpacity style={styles.button} onPress={handlePress}>
             <View style={styles.content}>
                 {icon && <View style={styles.iconContainer}>{icon}</View>}
                 <Text style={styles.text}>{label}</Text>
