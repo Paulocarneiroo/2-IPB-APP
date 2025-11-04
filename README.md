@@ -1,50 +1,113 @@
-# Welcome to your Expo app 👋
+# 📱 Aplicativo IPB — Igreja Presbiteriana do Brasil
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo desenvolvido em **React Native** (usando **Expo**) com o propósito de centralizar recursos cristãos da **Igreja Presbiteriana do Brasil (IPB)** em um só lugar.  
+O app oferece acesso rápido à **Bíblia Sagrada**, **Catecismo Maior de Westminster**, **Hinário Presbiteriano**, **Manual Presbiteriano**, devocionais e links úteis para membros e visitantes.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Tecnologias Utilizadas
+
+- **React Native**  
+- **Expo Router**
+- **TypeScript**
+- **React Navigation**
+- **Axios** (para requisições de conteúdo dinâmico)
+- **Ionicons / FontAwesome / MaterialCommunityIcons** (ícones)
+- **ScrollView, FlatList e Linking** (navegação e recursos nativos)
+- **StyleSheet (CSS-in-JS)** para estilização
+
+---
+
+## 📲 Funcionalidades Principais
+
+✅ **Tela Inicial (Home)**  
+- Exibe botões em formato de **grade (2 colunas)** para cada seção do app.  
+- Ícones intuitivos para cada funcionalidade (Bíblia, Catecismo, Hinário, Manual, etc).  
+- Botões podem redirecionar tanto para telas internas quanto para **links externos** (ex: site da IPB ou documentos oficiais).  
+
+✅ **Bíblia**  
+- Leitura de versículos por capítulo.  
+- **Texto selecionável** e copiável.  
+- Scroll fluido e carregamento dinâmico de capítulos.  
+
+✅ **Catecismo Maior de Westminster**  
+- Exibição de perguntas e respostas em formato JSON.  
+- Interface simples e legível para estudos teológicos.  
+
+✅ **Hinário e Manual Presbiteriano**  
+- Acesso direto a PDFs ou páginas oficiais.  
+- Uso de `Linking.openURL()` para abrir recursos externos.  
+
+✅ **Confissão de Fé de Westminster**  
+- Exibição dos capítulos, tópicos e referências bíblicas da CFW.
+---
+
+
+## 🎨 Estilo Visual
+
+* Paleta de cores suaves (tons de azul, verde e lilás)
+* Layout limpo e responsivo
+* Tipografia legível
+* Ícones grandes e intuitivos
+* Estrutura visual baseada em **ScrollView + Grid (2 colunas)**
+
+---
+
+## ⚙️ Como Executar o Projeto
+
+1. **Clonar o repositório**
+
+   ```bash
+   git clone https://github.com/seu-usuario/ipb-app.git
+   cd ipb-app
+   ```
+
+2. **Instalar dependências**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Executar em ambiente Expo**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🎥 Demonstração
+![Demonstração do App](./demo/demo.gif)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📦 Gerar Arquivo Executável (APK / IPA)
 
-When you're ready, run:
+### Android
 
 ```bash
-npm run reset-project
+npx expo build:android -t apk
 ```
+---
+## 👤 Autor
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Paulo Carneiro**
+📍 Brasil
+🎓 Estudante de Ciência da Computação
+✝️ Cristão e desenvolvedor apaixonado por tecnologia e fé <br>
+🔗 [LinkedIn](https://www.linkedin.com/in/paulocarneiroo/) • [GitHub](https://github.com/Paulocarneiroo)
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## ⚠️ Importante Saber
+<b>Este projeto NÃO tem 
+nenhuma ligação oficial com a 
+Igreja Presbiteriana do Brasil, é apenas um projeto feito de forma independente e para fins de estudo 
+</b>
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🌟 Agradecimentos
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Agradecimentos à minha amada **Igreja Presbiteriana do Brasil (IPB)** por inspirar este projeto,
+e a todos os irmãos e irmãs que contribuem com o ensino fiel da Palavra de Deus.<br>
+<i>Soli Deo Gloria</i>
