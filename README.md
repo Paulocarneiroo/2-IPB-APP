@@ -77,7 +77,9 @@ O app oferece acesso rápido à **Bíblia Sagrada**, **Catecismo Maior de Westmi
 ---
 
 ## 🎥 Demonstração
-![Demonstração do App](./demo/demo.gif)
+<p align="center">
+  <img src="./demo/demo.gif" width="300" alt="Demonstração do App" />
+</p>
 
 ---
 
