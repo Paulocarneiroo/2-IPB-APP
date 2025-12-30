@@ -3,6 +3,11 @@
 Aplicativo desenvolvido em **React Native** (usando **Expo**) com o propósito de centralizar recursos cristãos da **Igreja Presbiteriana do Brasil (IPB)** em um só lugar.  
 O app oferece acesso rápido à **Bíblia Sagrada**, **Catecismo Maior de Westminster**, **Hinário Presbiteriano**, **Manual Presbiteriano**, devocionais e links úteis para membros e visitantes.
 
+<p align="center">
+  <img src="./demo/demo.gif" width="300" alt="Demonstração do App" />
+</p>
+
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
@@ -73,13 +78,6 @@ O app oferece acesso rápido à **Bíblia Sagrada**, **Catecismo Maior de Westmi
    ```bash
    npx expo start
    ```
-
----
-
-## 🎥 Demonstração
-<p align="center">
-  <img src="./demo/demo.gif" width="300" alt="Demonstração do App" />
-</p>
 
 ---
 
