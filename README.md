@@ -4,7 +4,9 @@ Aplicativo desenvolvido em **React Native** (usando **Expo**) com o propósito d
 O app oferece acesso rápido à **Bíblia Sagrada**, **Catecismo Maior de Westminster**, **Hinário Presbiteriano**, **Manual Presbiteriano**, devocionais e links úteis para membros e visitantes.
 
 <p align="center">
-  <img src="./demo/demo.gif" width="300" alt="Demonstração do App" />
+  <video src="./demo/demo.mp4" width="300" autoplay loop muted playsinline controls>
+    Seu navegador não suporta vídeo. Veja a demonstração em <a href="./demo/demo.mp4">demo/demo.mp4</a>.
+  </video>
 </p>
 
 
