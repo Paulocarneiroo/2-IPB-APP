@@ -3,7 +3,7 @@ import {Text, ScrollView, StyleSheet } from "react-native";
 
 export default function ApostlesCreedScreen() {
     return (
-        <ScrollView contentContainerStyle={styles.container}>
+        <ScrollView style={styles.scroll} contentContainerStyle={styles.container}>
             <Text style={styles.title}>Credo Apostólico</Text>
 
             <Text style={styles.paragraph}>
@@ -16,20 +16,28 @@ export default function ApostlesCreedScreen() {
 }
 
 const styles = StyleSheet.create({
+    scroll: {
+        flex: 1,
+        backgroundColor: "#f8f5f0",
+    },
     container: {
+        flexGrow: 1,
         padding: 20,
-        backgroundColor: "#fff",
+        paddingBottom: 100,
+        backgroundColor: "#f8f5f0",
     },
     title: {
         fontSize: 24,
         fontWeight: "bold",
         marginBottom: 20,
         textAlign: "center",
+        color: "#4b3f2f",
     },
     paragraph: {
         fontSize: 16,
         lineHeight: 24,
         textAlign: "justify",
-        fontWeight: "400"
+        fontWeight: "400",
+        color: "#3b3228",
     },
 });

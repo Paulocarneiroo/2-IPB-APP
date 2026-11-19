@@ -10,6 +10,7 @@ export default function HymnalScreen() {
         <ScrollView
             style={styles.container}
             contentContainerStyle={styles.scrollContent}
+            showsVerticalScrollIndicator={false}
         >
             <Text style={styles.title}>Hinário Novo Cântico</Text>
 
@@ -18,9 +19,10 @@ export default function HymnalScreen() {
                     <TouchableOpacity
                         style={styles.header}
                         onPress={() => setExpandedId(expandedId === hymn.id ? null : hymn.id)}
+                        activeOpacity={0.8}
                     >
                         <View style={styles.headerLeft}>
-                            <MaterialCommunityIcons name="music-note-outline" size={22} color="#E0E0E0" />
+                            <MaterialCommunityIcons name="music-note-outline" size={22} color="#4b3f2f" />
                             <Text style={styles.hymnTitle}>
                                 {hymn.numero}. {hymn.titulo}
                             </Text>
@@ -28,7 +30,7 @@ export default function HymnalScreen() {
                         <MaterialCommunityIcons
                             name={expandedId === hymn.id ? "chevron-up" : "chevron-down"}
                             size={24}
-                            color="#E0E0E0"
+                            color="#4b3f2f"
                         />
                     </TouchableOpacity>
 
@@ -52,16 +54,20 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 22,
-        color: "#6b5b4b",
+        color: "#4b3f2f",
         fontWeight: "600",
         marginBottom: 20,
         textAlign: "center",
     },
     card: {
-        backgroundColor: "#6b5b4b",
+        backgroundColor: "#eae4dc",
         borderRadius: 12,
         marginBottom: 12,
         padding: 14,
+        shadowColor: "#000",
+        shadowOpacity: 0.1,
+        shadowRadius: 3,
+        elevation: 2,
     },
     header: {
         flexDirection: "row",
@@ -69,18 +75,21 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     headerLeft: {
+        flex: 1,
         flexDirection: "row",
         alignItems: "center",
         gap: 8,
+        marginRight: 8,
     },
     hymnTitle: {
-        color: "#FFFFFF",
+        flex: 1,
+        color: "#4b3f2f",
         fontSize: 16,
         fontWeight: "500",
     },
     hymnText: {
         marginTop: 10,
-        color: "#D6D6D6",
+        color: "#6b5b4b",
         fontSize: 15,
         lineHeight: 22,
     },
