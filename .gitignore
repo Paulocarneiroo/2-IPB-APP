@@ -25,19 +25,35 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
 
-# macOS
+# OS
 .DS_Store
+Thumbs.db
+Desktop.ini
 *.pem
 
-# local env files
-.env*.local
+# env / secrets
+.env
+.env.*
+!.env.example
 
 # typescript
 *.tsbuildinfo
+
+# test / coverage / caches
+coverage/
+.turbo/
+.cache/
+
+# EAS local build artifacts
+.eas/
 
 app-example
 
 # generated native folders
 /ios
 /android
+
+# JetBrains IDE
+.idea/
